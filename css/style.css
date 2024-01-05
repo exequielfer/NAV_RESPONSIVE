@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  background-color: darkolivegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo img {
+  height: 40px;
+  width: auto;
+}
+
+.header_nav_ul li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+}
+
+.header_button button {
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 8px;
+  background-color: wheat;
+}
+
+header a:nth-child(3) {
+  display: none;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 378px) {
+  header a:nth-child(3) {
+    display: block;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  header a:nth-child(3) {
+    display: block;
+  }
+
+  .header_logo {
+    cursor: pointer;
+  }
+
+  .header_logo img:hover {
+    transform: scale(1.1);
+  }
+
+  .header_nav_ul li:hover {
+    color: yellow;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .header_button button {
+  }
+
+  .header_button button:hover {
+    transition: 0.3s ease 0s;
+    transform: scale(1.1);
+  }
+}
